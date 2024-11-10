@@ -1,0 +1,219 @@
+:root {
+    --bgColor: #1c5550;
+    --menuTextColor: #DFD9D9;
+    --menuTextColorHover: #db6c6c;
+    --asideHeadcolor: #C3B97F;
+    --asideMenuColor: #91B599;
+    --artSecBgColor: #DFD9D9;
+    --artSecColor: #1C5550;
+    --artButBgColor: #C3B97F;
+    --artButTextColor:#DFD9D9;
+
+
+}
+
+
+
+
+/* main 1 */
+.main_contain {
+    width: min(100%, 1440px);
+    background-color: var(--bgColor);
+    margin: auto;
+    display: grid;
+    padding: 32px 20px;
+    gap: 48px 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 48px 146px 146px 220px;
+    grid-template-areas:
+        "head head head head"
+        "ASIDE SEC1 SEC1 SEC2"
+        "ASIDE SEC1 SEC1 SEC3"
+        "ART1 ART2 ART3 ART4";
+
+}
+
+/* header */
+header {
+    grid-area: head;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.nav_ul {
+    display: flex;
+    column-gap: 80px;
+}
+
+.nav_ul li a {
+    color: var(--menuTextColor);
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+
+}
+
+.nav_ul li a:hover {
+    color: var(--menuTextColorHover);
+}
+
+
+
+
+
+.icons {
+    display: flex;
+    width: 96px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons button {
+    background: #000000;
+    opacity: 20%;
+    box-shadow: 0px 2px 4px -2px #DFD9D9;
+    box-shadow: 0px 2px 4px 0px #000000;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+
+
+}
+
+
+.fa-user {
+    color: #91B599;
+    font-size: 16px;
+}
+
+.fa-cart-shopping {
+    color: #C3B97F;
+    font-size: 16px;
+}
+
+
+
+/* aside */
+aside {
+    grid-area: ASIDE;
+    background-color: #00000033;
+    box-shadow: 0px 4px 4px 0px #000000 inset;
+    box-shadow: 0px -1px 4px 0px #DFD9D9 inset;
+    padding: 38px 40px;
+}
+
+
+aside h2 {
+    color: var(--asideHeadcolor);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 16px;
+}
+
+aside nav ul li a {
+    color: var(--asideMenuColor);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+aside nav ul li a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* section1 */
+.section1 {
+    grid-area: SEC1;
+}
+
+.section1 img,
+.section2 img,
+.section3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.art1 img,
+.art2 img,
+.art3 img,
+.art4 img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* section2 */
+.section2 {
+    grid-area: SEC2;
+
+}
+
+/* section3 */
+.section3 {
+    grid-area: SEC3;
+}
+
+
+/* art1 */
+.art1 {
+    grid-area: ART1;
+}
+
+/* art2 */
+.art2 {
+    grid-area: ART2;
+}
+
+/* art3 */
+.art3 {
+    grid-area: ART3;
+}
+
+/* art4 */
+.art4 {
+    grid-area: ART4;
+}
+
+.art_sec {
+    background-color: var(--artSecBgColor);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.art_sec span {
+    font-family: "Inter", sans-serif;
+    color: var(--artSecColor);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 8px;
+}
+
+.art_sec button {
+    background: var(--artButBgColor);
+    border: none;
+    height: 100%;
+    padding: 9px 8px 9px 10px;
+    color: var(--artButTextColor);
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+
+
+
+}
